@@ -1,0 +1,230 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0f172a; 
+    color: #f8fafc;
+}
+
+header {
+    background-color: #020617;
+    color: white;
+    padding: 16px;
+    text-align: center;
+}
+
+header h1 {
+    color: #22d3ee; 
+}
+
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #22d3ee;
+    color: #0f172a;
+}
+
+
+.hero {
+    background: #1e293b;
+    padding: 50px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.hero h2 {
+    color: #22d3ee;
+}
+ main {
+        padding: 30px;
+        background-color: #1e293b;
+        max-width: 1000px;
+        margin: auto;
+        border-radius: 10px;
+    }
+footer {
+    background-color: #020617;
+    color: #94a3b8;
+    text-align: center;
+    padding: 10px;
+}
+
+main h4 {
+    color: #22d3ee;
+    margin-top: 20px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #0f172a;
+    border-radius: 8px;
+}
+
+label {
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1e293b;
+    color: #f8fafc;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #22d3ee;
+}
+
+button {
+    background-color: #22d3ee;
+    color: #0f172a;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #0ea5e9;
+}
+/* AI page image */
+img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #22d3ee;
+    color: #0f172a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #0ea5e9;
+}
+ /*FAQ accordion styles*/
+        .faq-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .faq-item {
+            background-color: #1e293b;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            width: 100%;
+            background-color: #1e293b;
+            color: #f8fafc;
+            padding: 18px 20px;
+            text-align: left;
+            border: none;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: #22d3ee;
+            color: #0f172a;
+        }
+
+        .faq-question.active {
+            background-color: #22d3ee;
+            color: #0f172a;
+        }
+
+        .faq-arrow {
+            font-size: 18px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .faq-arrow {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.3s ease;
+            padding: 0 20px;
+            color: #f8fafc;
+            line-height: 1.7;
+        }
+
+        .faq-answer.open {
+            max-height: 300px;
+            padding: 16px 20px;
+        }
+
+        .faq-answer ul {
+            margin: 10px 0 0 20px;
+        }
+
+        .faq-answer ul li {
+            margin-bottom: 6px;
+        }
+/* Hero section fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    background-color: #22d3ee;
+    color: #0f172a;
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #22d3ee;
+    color: #f8fafc;
+}
+
+tr:nth-child(even) {
+    background-color: #1e293b;
+}
