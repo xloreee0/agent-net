@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentNet | Contact</title>
+    <!-- External stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function validateContact() {
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let message = document.getElementById("message").value;
+    
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill in all fields");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+<!-- Header and Navigation -->
+    <header>
+        <h1>AgentNet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="ai.html">AI in Everyday Life</a>
+            <a href="login.html">Login</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Contact Us</h2>
+        <p>Have questions about AI? Get in touch with us.</p>
+    </section>
+    <img src="contact.jpg" alt="Customer support contact">
+<!-- Main Content -->
+    <main>
+        <h3>Send Us a Message</h3>
+        <!-- Contact Form -->
+
+        <form onsubmit="return validateContact()">
+            <!-- Full name field -->
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+           
+            <!-- Email field -->
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <!-- Message field -->
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; 2026 AgentNet. Educational use only.</p>
+        <p><a href="faq.html">FAQ</a></p>
+    </footer>
+
+</body>
+</html>

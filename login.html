@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentNet | Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript form validation -->
+    <script>
+        function validateForm() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+        /* Check if fields are empty */
+            if (username === "" || password === "") {
+                alert("Please fill in all fields");
+                return false;
+            }
+        /* Check password length */
+            if (password.length < 6) {
+                alert("Password must be at least 6 characters long");
+                return false;
+            }
+        
+            return true;
+        }
+        </script>        
+</head>
+<body>
+<!-- Header and Navigation -->
+    <header>
+        <h1>AgentNet</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="ai.html">AI in Everyday Life</a>
+            <a href="login.html">Login</a>
+            <a href="contact.html" >Contact</a>
+        </nav>
+    </header>
+<!-- Hero Section-->
+    <section class="hero">
+        <h2>Login to AgentNet</h2>
+        <p>Access exclusive AI content and updates.</p>
+    </section>
+
+    <img src="login.jpg" alt="Secure login">
+<!-- Main Content -->
+    <main>
+        <h3>User Login</h3>
+
+        <!-- Login Form with JS validation -->
+
+        <form onsubmit="return validateForm()">
+        <!-- Username field -->
+            <label for="username">Username or Email:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+<!-- Password field -->
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <!-- Forgot password link -->
+            <p><a href="#">Forgot your password?</a></p>
+
+            <button type="submit">Login</button>
+            <!-- Register link -->
+            <p>Don't have an account? <a href="#">Register here</a></p>
+        </form>
+
+    </main>
+<!-- Footer -->
+    <footer>
+        <p>&copy; 2026 AgentNet. Educational use only.</p>
+        <p><a href="faq.html">FAQ</a></p>
+    </footer>
+
+</body>
+</html>
